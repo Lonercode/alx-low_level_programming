@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - Entry 
- * 
+ * main - Entry
+ *
  *
  * Return: 0 on success.
  */

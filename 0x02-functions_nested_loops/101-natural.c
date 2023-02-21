@@ -5,12 +5,11 @@
  *
  * Return: 0(success)
  */
-
 int main(void)
 {
 int n = 0;
 int sum;
-for(n; n<=1024; n++){
+for (n; n<=1024; n++){
 if ((n % 5 )==0 || (n % 3) == 0){
 sum = n+=n;      
 }   

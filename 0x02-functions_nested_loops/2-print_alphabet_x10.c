@@ -5,7 +5,7 @@
  * Return: Nothing
  */
 void print_alphabet_x10(void){
-int c;
+char c;
 int i = 0;
 while (i < 10)
 {
@@ -14,6 +14,6 @@ for (c = 'a'; c <= 'z'; c++)
 _putchar (c);
 }
 i++;
-_putchar ("\n");
+_putchar ('\n');
 }
 }

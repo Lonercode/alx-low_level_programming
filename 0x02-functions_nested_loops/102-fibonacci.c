@@ -19,8 +19,7 @@ x = y;
 y = n;
 n = x + y;
 if (i == 50)
-putchar('\n');
-putchar('\n');
+printf("\n\n");
 else
 {
 printf(", ");

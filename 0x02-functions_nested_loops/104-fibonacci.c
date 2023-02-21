@@ -26,8 +26,8 @@ j = j / 1000;
 while (x <= 98)
 {
 val = (m + n) / 1000;
-l = (m + n) - (val * 1000);
-k = (i + j) + val;
+l = (m + n) -(val * 1000);
+k = (i + j) +val;
 m = n;
 n = l;
 i = j;

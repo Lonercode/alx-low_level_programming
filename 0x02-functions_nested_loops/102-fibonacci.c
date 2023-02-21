@@ -19,5 +19,6 @@ x = y;
 y = n;
 n = x + y;
 }
+printf("\n");
 return (0);
 }

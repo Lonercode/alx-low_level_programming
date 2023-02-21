@@ -7,25 +7,21 @@
  */
 int main(void)
 {
-int i;
-int x = 1;
-int y = 2;
-int n = x + y;
-printf("%d, %d, ", x, y);
-for (i = 3; i <= 51; ++i)
+unsigned long x, i, j, k;
+i = 0;
+j = 1;
+for (x = 0; x < 50; x++)
 {
-printf("%d", n);
-x = y;
-y = n;
-n = x + y;
-if (i == 51)
-printf("\n");
+k = i + j;
+i = j;
+j = k;
+printf("%lu", k);
+if (x == 49)
+putchar('\n');
 else
 {
 printf(", ");
 }
 }
-
 return (0);
 }
-

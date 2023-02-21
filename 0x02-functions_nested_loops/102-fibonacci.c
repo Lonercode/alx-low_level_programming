@@ -18,8 +18,8 @@ printf("%d", n);
 x = y;
 y = n;
 n = x + y;
-if (i == 50)
-printf("\n\n");
+if (i == 49)
+printf("\n");
 else
 {
 printf(", ");

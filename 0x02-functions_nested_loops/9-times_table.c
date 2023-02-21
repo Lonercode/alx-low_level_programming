@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * times_table - Multiplication table
- *@c: input
+ *
  * Return: Nothing
  */
 void times_table(void)

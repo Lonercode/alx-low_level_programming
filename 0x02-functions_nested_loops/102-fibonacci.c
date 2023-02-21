@@ -18,7 +18,7 @@ printf("%d", n);
 x = y;
 y = n;
 n = x + y;
-if (i == 49)
+if (i == 50)
 printf("\n");
 else
 {

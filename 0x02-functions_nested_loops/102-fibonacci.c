@@ -14,11 +14,17 @@ int n = x + y;
 printf("%d, %d, ", x, y);
 for (i = 3; i <= 50; ++i)
 {
+if (i == 50)
+{
+printf("\n");
+}
+else
+{
 printf("%d, ", n);
 x = y;
 y = n;
 n = x + y;
 }
-printf("\n");
 return (0);
+}
 }

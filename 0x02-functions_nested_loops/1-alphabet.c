@@ -4,13 +4,13 @@
  *
  * Return: 0(success)
  */
-int main(void)
+void print_alphabet(void)
 {
 char c;
 for(c = 'a', c <= 'z'; c++)
 {
-print_alphabet(c);
+_putchar(c);
 }
-print_alphabet('\n');
+_putchar('\n');
 return (0);
 }

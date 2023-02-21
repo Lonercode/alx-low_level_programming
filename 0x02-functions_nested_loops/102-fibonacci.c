@@ -12,13 +12,13 @@ int x = 1;
 int y = 2;
 int n = x + y;
 printf("%d, %d, ", x, y);
-for (i = 3; i <= 50; ++i)
+for (i = 3; i <= 51; ++i)
 {
 printf("%d", n);
 x = y;
 y = n;
 n = x + y;
-if (i == 50)
+if (i == 51)
 printf("\n");
 else
 {

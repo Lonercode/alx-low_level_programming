@@ -7,7 +7,7 @@
 int main(void)
 {
 unsigned long x, i, j, k, sum;
-i = sums = 0;
+i = sum = 0;
 j = 1;
 for (x = 0; x < 50; x++)
 {

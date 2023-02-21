@@ -4,10 +4,10 @@
  *
  * Return: 0 or 1 (Depending on result)
  */
-int _islower(int c)
+int _islower(int r)
 {
-int c;
-if (c >= 'a' && c <= 'z')
+int r;
+if (r >= 'a' && r <= 'z')
 {
 return (1);
 }

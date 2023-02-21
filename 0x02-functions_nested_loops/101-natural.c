@@ -7,11 +7,11 @@
  */
 int main(void)
 {
-int n = 0;
+int n;
 int sum;
-for (n; n<=1024; n++){
-if ((n % 5 )==0 || (n % 3) == 0){
-sum = n+=n;      
+for (n = 0; n < 1024; n++){
+if ((n % 5 ) ==0 || (n % 3) == 0){
+sum = n += n;      
 }   
 }
 printf("%d\n",sum);

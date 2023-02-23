@@ -2,9 +2,6 @@
 /**
  * print_square - Prints a square whose dimension depends on the value size
  *@size:input
- *@i:input
- *@j:input
- *@m:input
  * Return: Nothing
  */
 void print_square(int size)

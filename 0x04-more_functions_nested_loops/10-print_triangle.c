@@ -2,22 +2,20 @@
 
 /**
  * print_triangle - Print a triangle pattern
- * @size: input 1
- * @i: input 2
- * @j: input 3
+ * @size: input
  * Return: Nothing
  */
 void print_triangle(int size)
 {
 int i;
 int j;
-if (n > 0)
+if (size > 0)
 {
-for(i = 0; i < n; i++)
+for(i = 0; i < size; i++)
 {     
-for (j = 0; j < n; j++)
+for (j = 0; j < size; j++)
 {            
-if(j < n-i-1)
+if(j < size-i-1)
 {
 putchar(' ');
 } 

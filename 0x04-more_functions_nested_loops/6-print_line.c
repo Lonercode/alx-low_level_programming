@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_line - Print a line whose length depends on the variable n
- *
+ *@n:input
  * Return: Nothing
  */
 int print_line(int n)

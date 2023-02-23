@@ -1,27 +1,24 @@
 #include <stdio.h>
-
+#include <math.h>
 /**
- * main - Entry to code
- *
- * Return: 0 (sucess)
+ * main -  Entry to code
+ * Return: Always 0.
  */
+
 int main(void)
 {
-	unsigned long int n = 612852475143;
-	unsigned long int p;
+	long int n = 612852475143;
+	int p;
 
-	p = 3;
-	while (p < n / 2)
+	for (p = 2; p <= sqrt(n); p++)
 	{
-		if ((n % p) == 0)
+
+		if (n % p == 0)
 		{
-			if((p % 3) == 2)
-				printf(",%lu ", p);
+			n = n / p;
+			p = 1;
 		}
-
-		p+=2;
 	}
-
-	putchar('\n');
-	return (0);
+	printf("%ld\n", n);
+return (0);
 }

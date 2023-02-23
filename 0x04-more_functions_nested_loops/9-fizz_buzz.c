@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 /**
  * main - Fizz Buzz
  *
@@ -6,33 +6,25 @@
  */
 int main(void)
 {
-	int x;
-
-	x = 0;
-	while (x < 100)
-	{
-		x++;
-		if ((x % 3) != 0 && (x % 5) != 0)
-		{
-			printf("%d", x);
-		}
-		else if ((x % 3)  == 0 && (x % 5) != 0)
-		{
-			printf("Fizz");
-		}
-		else if ((x % 3) != 0 && (x % 5) == 0)
-		{
-			printf("Buzz");
-		}
-		else
-		{
-			printf("FizzBuzz");
-		}
-		if (x < 100)
-			putchar(32);
-	}
-	putchar('\n');
-	return (0);
+    int i;
+for (i = 1; i <= 100; i++)
+{
+if ((i % 3 == 0) && (i % 5 != 0)){
+printf("Fizz ");
 }
-
-
+else if ((i % 5 == 0) && (i % 3 != 0))
+{
+printf("Buzz ");
+}
+else if ((i % 5 == 0) && (i % 3 == 0))
+{
+printf("FizzBuzz ");
+}
+else 
+{
+printf("%d ", i);
+}
+}
+printf("\n");
+return (0);
+}

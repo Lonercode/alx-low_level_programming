@@ -1,7 +1,7 @@
 #include <stdio>
 /**
  * main - Fizz Buzz
- *@i:input
+ *
  * Return: 0
  */
 int main(void)

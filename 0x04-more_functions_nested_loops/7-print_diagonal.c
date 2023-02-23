@@ -2,8 +2,7 @@
 /**
  * print_diagonal - Prints a diagonal line whose length depends on the value n
  *@n:input
- *@i:input
- *@j:input
+ *
  * Return: Nothing
  */
 void print_diagonal(int n)

@@ -4,7 +4,7 @@
  * @s: input string
  * Return: Nothing
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 int i = 0;
 int j;

@@ -8,15 +8,16 @@
  */
 int main(void)
 {
+int n;
+char password[n];
 int i = 0;
 int r = 0;
-int n = 8;
 srand((unsigned int)(time(NULL)));
 char nums[] = "0123456789";
 char lower[] = "abcdefghijklmnopqrstuvwxyz";
 char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 char syms[] = "!@#$^&*()";
-char password[n];
+
 r = rand() % 4;
 for ( i = 0; i < n; i++)
 {

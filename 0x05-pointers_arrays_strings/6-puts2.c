@@ -14,7 +14,7 @@ i++;
 }
 for (j = 0; j < i; j++)
 {
-if (str[i] % 2 == '\0')
+if (j % 2 == 0)
 {
 continue;
 }

@@ -41,7 +41,7 @@ printf("%c", password);
 }
 else 
 {
-password = syms[rand() % 10];
+password = syms[rand() % 9];
 r = rand() % 4;
 printf("%c", password);
 }

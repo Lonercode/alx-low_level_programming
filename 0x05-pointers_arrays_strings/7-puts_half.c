@@ -15,16 +15,16 @@ i++;
 }
 if (i % 2 == 0)
 {
-for (j = (i / 2); j < i; j++)
+for (j = (i + 1) / 2; j < i; j++)
 {
-_putchar(str[j]);
+_putchar(s[j]);
 }
 }
-else if (i % 2 != 0)
-{
+else if ( i % 2 != 0)
+{	
 for (n = (i - 1) / 2; n < i; n++)
 {
-_putchar(str[n]);
+_putchar(s[n]);
 }
 }
 _putchar('\n');

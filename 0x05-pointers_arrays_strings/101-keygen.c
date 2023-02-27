@@ -10,6 +10,7 @@ int main(void)
 {
 int i = 0;
 int r = 0;
+int n = 10;
 srand((unsigned int)(time(NULL)));
 char nums[] = "0123456789";
 char lower[] = "abcdefghijklmnopqrstuvwxyz";

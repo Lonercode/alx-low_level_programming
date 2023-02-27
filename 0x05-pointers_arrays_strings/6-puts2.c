@@ -16,11 +16,11 @@ for (j = 0; j < i; j++)
 {
 if (j % 2 == 0)
 {
-continue;
+_putchar(str[j]);
 }
 else
 {
-_putchar(str[j]);
+continue;
 }
 }
 _putchar('\n');

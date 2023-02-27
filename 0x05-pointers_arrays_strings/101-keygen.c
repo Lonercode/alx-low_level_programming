@@ -8,44 +8,18 @@
  */
 int main(void)
 {
-int i = 0;
-int r = 0;
-int n = 14;
-char nums[] = "0123456789";
-char lower[] = "abcdefghijklmnopqrstuvwxyz";
-char upper[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-char syms[] = "!@#$^&*()";
-char password;
+	char i;
+	int x;
 
-srand((unsigned int)(time(NULL)));
-r = rand() % 4;
-for ( i = 0; i < n; i++)
-{       
-if (r == 1)
-{
-password = nums[rand() % 10];
-r = rand() % 4;
-printf("%c", password);
-}
-else if (r == 2)
-{
-password = lower[rand() % 26];
-r = rand() % 4;
-printf("%c", password);
-}
-else if (r == 3)
-{
-password = upper[rand() % 26];
-r = rand() % 4;
-printf("%c", password);
-}
-else 
-{
-password = syms[rand() % 9];
-r = rand() % 4;
-printf("%c", password);
-}
-}
-return (0);
+	srand(time(0));
+	while (x <= 2645)
+	{
+		i = rand() % 128;
+		x += i;
+		putchar(i);
+	}
+	putchar(2772 - x);
+
+	return (0);
 }
              

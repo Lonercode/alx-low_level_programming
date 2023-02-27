@@ -2,7 +2,7 @@
 /**
  * rev_string - String in reverse
  * @s: input string
- * Return: Reversed String
+ * Return: Nothing
  */
 void rev_string(char *s)
 {
@@ -14,6 +14,6 @@ i++;
 }
 for (j = i - 1; j >= 0; j--)
 {
-return(s[j]);
+_putchar(s[j]);
 }
 }

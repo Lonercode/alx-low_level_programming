@@ -11,6 +11,8 @@ int j;
 int k;
 char *t;
 char u;
+
+t = s;
 while (s[i] != '\0')
 {
 i++;
@@ -24,6 +26,6 @@ for (j = 0; j < (i / 2); j++)
 u = s[j];
 s[j] = *t;
 *t = u;
-t--
+t--;
 }
 }

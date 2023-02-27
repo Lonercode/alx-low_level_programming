@@ -17,14 +17,14 @@ if (i % 2 == 0)
 {
 for (j = (i + 1) / 2; j < i; j++)
 {
-_putchar(s[j]);
+_putchar(str[j]);
 }
 }
 else if ( i % 2 != 0)
 {	
 for (n = (i - 1) / 2; n < i; n++)
 {
-_putchar(s[n]);
+_putchar(str[n]);
 }
 }
 _putchar('\n');

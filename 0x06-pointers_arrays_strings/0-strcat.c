@@ -23,9 +23,5 @@ char *_strcat(char *dest, char *src)
         i++;
     }
     dest[i] = '\0';
-    for (l = 0; l < i; l++)
-    {
-    _putchar(dest[l]);
-    }
-    return (0);
+    return (dest);
 }

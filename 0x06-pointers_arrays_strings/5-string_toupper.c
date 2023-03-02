@@ -1,9 +1,8 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * string_toupper - Lowercase to upper
  * @str: input 1
- *
- * Return: Result 
+ * Return: Result
  */
 char *string_toupper(char *str)
 {

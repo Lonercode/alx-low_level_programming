@@ -9,9 +9,8 @@ char *_strncat(char *dest, char *src, int n)
 {
     int i = 0;
     int j = 0;
-    int k;
     int l;
-    int m;
+ 
 
     while (dest[i] != '\0')
     {
@@ -23,23 +22,16 @@ char *_strncat(char *dest, char *src, int n)
         j++;
         i++;
     }
-    dest[i] = '\0';
-    for (m = 0; m < i; m++)
-    {
-    putchar(dest[m]);
-    }
+    dest[i] = '\0'
     for (l = 0; l < n; l++)
     {
     if (l >= j)
     {
-        for (m = 0; m < i; m++)
-        {
-        _putchar(src[j]);
-        }
+        return (src[j]);
     }
     else
     {
-        _putchar(src[l]);
+        return (src[l]);
     }
     }
     return (0);

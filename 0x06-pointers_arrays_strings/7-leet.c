@@ -8,9 +8,9 @@ char *leet(char *str)
 {
 int i = 0;
 int j;
-char up[] = {'A', 'E', 'O', 'T', 'L'};
-char lo[] = {'a', 'e', 'o', 't', 'l'};
-char nu[] = {'4', '3', '0', '7', '1'};
+char up[] = {'A', 'E', 'O', 'T', 'L', '\0'};
+char lo[] = {'a', 'e', 'o', 't', 'l', '\0'};
+char nu[] = {'4', '3', '0', '7', '1', '\0'};
 
 for (i = 0; str[i] != '\0'; i++)
 {

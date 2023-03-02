@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * infinite_add - Add two numbers
+ * infinite_add - add two numbers
  * @n1: input 1
  * @n2: input 2
  * @r: input 3
@@ -10,69 +10,50 @@
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-int leni = 0, lenj = 0, k = 0, i, j, sum, max;
-
-while (n1[leni] != '\0')
-{
-leni++;
-}
-while (n2[lenj] != '\0')
-{
-lenj++;
-}
-if (leni > lenj)
-{
-max = leni;
-}
-else{
-max = lenj;
-}
-if ((max + 1) >= size_r)
-{
-return (0);
-}
-r[max + 1] = '\0';
-while (max >= 0)
-{
-i = (n1[leni - 1] - '0');
-j = (n1[lenj - 1] - '0');
-if (leni > 0 && lenj > 0)
-{
-sum = i + j + k;
-}
-else if (leni < 0 && lenj > 0)
-{
-sum = j + k;
-}
-else if (leni > 0 && lenj < 0)
-{
-sum = i + k;
-}
-else
-{
-sum = k;
-}
-if (sum > 9)
-{
-k = sum / 10;
-sum = (sum % 10) + '0';
-}
-else
-{
-k = 0;
-sum = sum + '0';
-}
-r[max] = sum;
-leni--;
-lenj--;
-max--;
-}
-if (*(r) != 0)
-{
-return (r);
-}
-else
-{
-return (r + 1);
-}
+	int a_len = 0, b_len = 0, carry = 0, a, b, sum, biggest;
+	
+	while (n1[a_len] != '\0')
+		a_len++;
+	while (n2[b_len] != '\0')
+		b_len++;
+	if (a_len > b_len)
+		biggest = a_len;
+	else
+		biggest = b_len;
+	if ((biggest + 1) >= size_r)
+		return (0);
+	r[biggest + 1] = '\0';
+	
+	while (biggest >= 0)
+	{
+		a = (n1[a_len - 1] - '0');
+		b = (n1[b_len - 1] - '0');
+		if (a_len > 0 && b_len > 0)
+			sum = a + b + carry;
+		else if (a_len < 0 && b_len > 0)
+			sum = b + carry;
+		else if (a_len > 0 && b_len < 0)
+			sum = a + carry;
+		else
+			sum = carry;
+		
+		if (sum > 9)
+		{
+			carry = sum / 10;
+			sum = (sum % 10) + '0';
+		}
+		else
+		{
+			carry = 0;
+			sum = sum + '0';
+		}
+		r[biggest] = sum;
+		a_len--;
+		b_len--;
+		biggest--;
+	}
+	if (*(r) != 0)
+		return (r);
+	else
+		return (r + 1);
 }

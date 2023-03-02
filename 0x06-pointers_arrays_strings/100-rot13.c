@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * rot13 - change letters based on rot13.
- * @s: input
+ * @str: input
  *
  * Return: Encoded string
  */

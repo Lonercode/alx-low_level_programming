@@ -3,29 +3,23 @@
  * _strcat - Concatenates two strings 
  * @dest: input 1
  * @src: input 2
+ * @n: input 3
  * Return: Result of concatenation 
  */
-int main(void)
+char _strncpy(char *dest, char *src, int n)
 {
-    char dest[100];
-    char src[100] = "stupid";
-    int i = 0;
+    int i;
     int j = 0;
-    int k;
 
     while (dest[j] != '\0'){
         j++;
     }
     
-    for (i = 0; src[i] != '\0'; i++)
+    for (i = 0; src[i] != '\0' && i < n; i++)
     {
         dest[i] = src[i];
     }
 
     dest[i] = '\0';
-    for (k = 0; k < j; k++)
-    {
-    putchar(dest[k]);
-    }
-    return (0);
+    return (dest);
 }

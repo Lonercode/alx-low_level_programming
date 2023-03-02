@@ -13,28 +13,45 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 int leni = 0, lenj = 0, k = 0, i, j, sum, max;
 
 while (n1[leni] != '\0')
+{
 leni++;
+}
 while (n2[lenj] != '\0')
+{
 lenj++;
+}
 if (leni > lenj)
+{
 max = leni;
-else
+}
+else{
 max = lenj;
+}
 if ((max + 1) >= size_r)
+{
 return (0);
+}
 r[max + 1] = '\0';
 while (max >= 0)
 {
 i = (n1[leni - 1] - '0');
 j = (n1[lenj - 1] - '0');
 if (leni > 0 && lenj > 0)
+{
 sum = i + j + k;
+}
 else if (leni < 0 && lenj > 0)
+{
 sum = j + k;
+}
 else if (leni > 0 && lenj < 0)
+{
 sum = i + k;
+}
 else
+{
 sum = k;
+}
 if (sum > 9)
 {
 k = sum / 10;
@@ -51,7 +68,11 @@ lenj--;
 max--;
 }
 if (*(r) != 0)
+{
 return (r);
+}
 else
+{
 return (r + 1);
+}
 }

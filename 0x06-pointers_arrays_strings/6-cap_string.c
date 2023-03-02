@@ -1,16 +1,16 @@
 #include "main.h"
 /**
- * cap_string - Capitalizes a string
+ * ap_string - Capitalizes a string
  * @str: input 1
+ *
  * Return: Result
  */
 char *cap_string(char *str)
 {
-int i;
+int i = 0;
 int j;
 int s[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
-i = 0;
 while (*(str + i) != '\0')
 {
 if (*(str + i) >= 'a' && *(str + i) <= 'z')

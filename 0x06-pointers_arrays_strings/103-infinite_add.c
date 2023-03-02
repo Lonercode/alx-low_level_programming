@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * infinite_add - add two numbers
  * @n1: input 1

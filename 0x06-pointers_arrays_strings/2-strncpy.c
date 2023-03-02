@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _strcat - Concatenates two strings 
+ * _strncpy - Copy characters
  * @dest: input 1
  * @src: input 2
  * @n: input 3
- * Return: Result of concatenation 
+ * Return: Result
  */
 char _strncpy(char *dest, char *src, int n)
 {

@@ -1,11 +1,12 @@
 #include "main.h"
 /**
- *_memcpy - Copy string
- *@dest: input
- *@src: input
- *@n: input
- *Return: Result
- */
+  * _memcpy - copy
+  * @dest: dest input
+  * @src: source input
+  * @n: input
+  *
+  * Return: dest
+  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 unsigned int j;

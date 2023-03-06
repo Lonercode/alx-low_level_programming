@@ -19,7 +19,7 @@ for (j = 0; j < i; j++)
 {
     if (s[j] == c)
     {
-        return (s[j]);
+        return (c);
     }
 }
 	return ('\0');

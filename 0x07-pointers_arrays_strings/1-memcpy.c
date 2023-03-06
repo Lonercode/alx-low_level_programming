@@ -1,10 +1,10 @@
 #include "main.h"
 /**
  *_memcpy - Copy string
- *@dest:input
- *@src:input
- *@n:input
- *Return:Result
+ *@dest: input
+ *@src: input
+ *@n: input
+ *Return: Result
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {

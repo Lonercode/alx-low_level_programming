@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
   * _strchr - Find character in string
   * @s: input
@@ -12,7 +11,7 @@ char *_strchr(char *s, char c)
 	int i = 0
 	int j;
 
-	while (s[i] != '\0')
+	while (s[i])
 	{
 		i++;
 	}

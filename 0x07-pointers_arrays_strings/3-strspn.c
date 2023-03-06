@@ -1,32 +1,32 @@
 #include "main.h"
 /**
- * _strspn - strspn
- * @s: input
- * @accept: input
- *
- * Return: Result
- */
+  * _strspn - strspn
+  * @s: input
+  * @accept: input
+  *
+  * Return: Result
+  */
 unsigned int _strspn(char *s, char *accept)
 {
-    int i = 0;
-    int j;
-    int num;
+	unsigned int i = 0, j, num = 0;
 
-    while (accept[i] != '\0')
-    {
-        i++;
-    }
+	while (accept[i])
+	{
+		j = 0;
 
-    for (j = 0; j <= i; j++)
-    {
-        if (s[j] == accept[j])
-        {
-            num = i;
-        }
-        else if (s[0] != accept[0])
-        {
-            num = 0;
-        }
-    }
-    return(num);
+		while (s[j] != 32)
+		{
+			if (accept[i] == s[j])
+			{
+				num++;
+			}
+
+			j++;
+		}
+
+		i++;
+	}
+
+	return (num);
 }
+

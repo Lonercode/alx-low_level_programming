@@ -17,9 +17,11 @@ while (s[i] != '\0')
 
 for (j = 0; j < i; j++)
 {
-    if (s[j] == c)
+    if (c == s[j])
     {
-        return (s[j]);
+	s += j;
+        return (s);
     }
 }
+	return ('\0');
 }

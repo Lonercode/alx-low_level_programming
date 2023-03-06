@@ -1,6 +1,7 @@
 #include "main.h"
+
 /**
-  * _strchr - Find character in string
+  * _strchr - find character in string
   * @s: input
   * @c: input
   *
@@ -8,8 +9,7 @@
   */
 char *_strchr(char *s, char c)
 {
-	int i = 0
-	int j;
+	int i = 0, j;
 
 	while (s[i])
 	{
@@ -18,7 +18,7 @@ char *_strchr(char *s, char c)
 
 	for (j = 0; j <= i; j++)
 	{
-		if (c == s[i])
+		if (c == s[j])
 		{
 			s += j;
 			return (s);

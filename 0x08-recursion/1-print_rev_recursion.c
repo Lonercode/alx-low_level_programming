@@ -10,7 +10,6 @@ void reverse(char *s);
 void _print_rev_recursion(char *s)
 {
 reverse(s);
-_putchar('\n');
 }
 
 /**

@@ -5,9 +5,11 @@
  * 
  * Return: Factorial of number.
  */
+long int fact(int n);
+
 int factorial(int n)
 {
-    fact(n);
+fact(n);
 }
 
 /**
@@ -19,13 +21,12 @@ int factorial(int n)
 
 long int fact(int n)
 {
-    if (n >= 0)
-    {
-        return(n * fact(n - 1));
-    
-    }
-    else
-    {
-        return (-1);
-    }
+if (n >= 0)
+{
+return(n * fact(n - 1));
+}
+else
+{
+return (-1);
+}
 }

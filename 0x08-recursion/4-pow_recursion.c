@@ -6,9 +6,11 @@
  * 
  * Return: Power Result.
  */
+int power(int x, int y);
+
 int factorial(int x, int y)
 {
-    power(x, y);
+power(x, y);
 }
 
 /**
@@ -21,13 +23,12 @@ int factorial(int x, int y)
 
 int power(int x, int y)
 {
-    if (y > 0)
-    {
-        return(x * power(x, y - 1));
-    
-    }
-    else
-    {
-        return (-1);
-    }
+if (y > 0)
+{
+return(x * power(x, y - 1));
+}
+else
+{
+return (-1);
+}
 }

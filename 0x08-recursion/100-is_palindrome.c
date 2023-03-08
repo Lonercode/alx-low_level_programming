@@ -42,17 +42,13 @@ return (l);
 int palindrome(char *s, int i)
 {
 int len = _strlen(s) - (i + 1);
-if (s[i] == s[len])
-{
-if (i + 1 == len || i == len)
+if (i + 1 == len || i == len && (s[i] == s[len]))
 {
 return (1);
 }
 palindrome(s, i + 1);
-}
 else
 {
 return (0);
 }
-return (1);
 }

@@ -8,9 +8,9 @@
  */
 int power(int x, int y);
 
-int factorial(int x, int y)
+int _pow_recursion(int x, int y)
 {
-power(x, y);
+return (power(x, y));
 }
 
 /**

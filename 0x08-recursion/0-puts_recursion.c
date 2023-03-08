@@ -5,6 +5,8 @@
  * 
  * Return: Nothing.
  */
+void stringy(char *s);
+
 void _puts_recursion(char *s)
 {
     stringy(s);
@@ -12,7 +14,7 @@ void _puts_recursion(char *s)
 }
 
 /**
- * stringy - Grt string with recursion
+ * stringy - Get string with recursion
  * @s: input
  * 
  * Return: Nothing.

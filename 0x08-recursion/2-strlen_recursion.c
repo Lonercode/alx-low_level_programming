@@ -22,7 +22,7 @@ return (0);
 
 int length(char *s)
 {
-static int l=0;
+int l=0;
 if(*s!='\0')
 {
 l++;

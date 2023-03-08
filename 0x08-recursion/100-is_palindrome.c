@@ -47,8 +47,8 @@ if (s[i] == s[len])
 if (i + 1 == len || i == len)
 {
 return (1);
-}
 palindrome(s, i + 1);
+}
 }
 else
 {

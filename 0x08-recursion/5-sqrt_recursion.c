@@ -2,6 +2,7 @@
 /**
 *_sqrt_recursion - square root
 *@n: input
+*@y: input
 *Return: square root
 */
 int square(int n, int y);

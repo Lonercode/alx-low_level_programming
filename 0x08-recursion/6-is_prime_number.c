@@ -2,6 +2,7 @@
 /**
 *is_prime_number - prime number
 *@n: input
+*@y: input
 *Return: 1 or 0
 */
 int prime(int n, int y);

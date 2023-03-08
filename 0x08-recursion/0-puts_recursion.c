@@ -10,7 +10,7 @@ void stringy(char *s);
 void _puts_recursion(char *s)
 {
 stringy(s);
- _putchar('\n');
+_putchar('\n');
 }
 
 /**

@@ -5,31 +5,12 @@
  *
  * Return: Length of string
  */
-int length(char *s);
 
 int _strlen_recursion(char *s)
 {
-return (length(s));
-}
-
-/**
- * length - Get string length with recursion
- * @s: input
- *
- * Return: Length
- */
-
-int length(char *s)
+if (*s != '\0')
 {
-int l=0;
-if(*s!='\0')
-{
-l++;
-length(++s);
-return (l);
+return (_strlen_recursion(s + 1) + 1);
 }
-else
-{
-return (l);
-}
+return (0);
 }

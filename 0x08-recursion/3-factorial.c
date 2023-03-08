@@ -9,7 +9,7 @@ long int fact(int n);
 
 int factorial(int n)
 {
-fact(n);
+return (fact(n));
 }
 
 /**

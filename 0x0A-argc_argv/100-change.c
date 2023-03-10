@@ -1,71 +1,67 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
-#include <stdbool.h>
 
 /**
- * coin - gets change
- * @i: input
- * Return: Result
+ * main - Entry to code
+ * @argc: input
+ * @argv: input
+ * Return: 0
  */
-int coin(int i)
+int change(int i);
+
+int main(int argc, char *argv[])
 {
-	int j = 0;
-
-	while (i != 0)
+	if (argc != 2)
 	{
-		if (i % 10 == 9 || i % 10 == 7)
-			i -= 2;
-		else if (i % 25 == 0)
-			i -= 25;
-		else if (i % 10 == 0)
-			i -= 10;
-		else if (i % 5 == 0)
-			i -= 5;
-		else if (i % 2 == 0)
-		{
-			if (i % 10 == 6)
-				i -= 1;
-			else
-				i -= 2;
-		}
-		else
-			i -= 1;
-
-		j++;
+		printf("%s\n", "Error");
+		return (1);
+	}
+	else if (argc < 0)
+	{
+		return (0);
 	}
 
-	return (j);
+	printf("%d\n", change(atoi(argv[1])));
+	return (0);
 }
 
 /**
- * main - Gets change
- * @argc: input
- * @argv: input
- * Return: Result
+ * change - change
+ * @i: input
+ * Return: change
  */
-int main(int argc, char *argv[])
+int change(int i)
 {
-	int i, c;
+	int j = 25, d = 10, n = 5, t = 2, p = 1;
+	int i;
 
-	c = 0;
-
-	if (argc != 2)
+	while (i > 0)
 	{
-		printf("Error\n");
-		return (1);
+		while (i >= q)
+		{
+			i -= q;
+			j++;
+		}
+		while (i >= d)
+		{
+			i -= d;
+			j++;
+		}
+		while (i >= n)
+		{
+			i -= n;
+			j++;
+		}
+		while (i >= t)
+		{
+			i -= t;
+			j++;
+		}
+		while (i >= p)
+		{
+			i -= p;
+			j++;
+		}
 	}
-
-	i = atoi(argv[1]);
-
-	if (i < 0)
-		printf("0\n");
-	else
-	{
-		c = coin(i);
-
-		printf("%d\n", c);
-	}
-
-	return (0);
+	return (j);
 }

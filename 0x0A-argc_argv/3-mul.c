@@ -14,9 +14,9 @@ int mult;
 if (argc == 3)
 {
 mult = 1;
-for (i= 1; i < argc; i++)
+for (i = 1; i < argc; i++)
 {
-mult *=argv[i];
+mult *= argv[i];
 }
 printf("%d\n", mult);
 }

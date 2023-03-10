@@ -5,6 +5,7 @@
  * main - Entry to code
  * @argc: input
  * @argv: input
+ * @i: input
  * Return: 0
  */
 int change(int i);

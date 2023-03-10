@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * main - Entry to code
- * @argc: input
- * @argv: input
- * @i: input
- * Return: 0
+ *main - Entry to code
+ *@argc: input
+ *@argv: input
+ *@i: input
+ *Return: 0
  */
 int change(int i);
 
@@ -26,9 +26,9 @@ return (0);
 }
 
 /**
- * change - change
- * @i: input
- * Return: change
+ *change - change
+ *@i: input
+ *Return: change
  */
 int change(int i)
 {

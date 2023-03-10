@@ -32,36 +32,36 @@ int main(int argc, char *argv[])
  */
 int change(int i)
 {
-	int j = 25, d = 10, n = 5, t = 2, p = 1;
-	int i;
+	int q = 25, d = 10, n = 5, t = 2, p = 1;
+	int c;
 
 	while (i > 0)
 	{
 		while (i >= q)
 		{
 			i -= q;
-			j++;
+			c++;
 		}
 		while (i >= d)
 		{
 			i -= d;
-			j++;
+			c++;
 		}
 		while (i >= n)
 		{
 			i -= n;
-			j++;
+			c++;
 		}
 		while (i >= t)
 		{
 			i -= t;
-			j++;
+			c++;
 		}
 		while (i >= p)
 		{
 			i -= p;
-			j++;
+			c++;
 		}
 	}
-	return (j);
+	return (c);
 }

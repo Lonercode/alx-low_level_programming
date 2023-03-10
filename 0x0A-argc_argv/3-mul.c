@@ -9,11 +9,10 @@
 
 int main(int argc, char *argv[])
 {
-    int args = 3;
     int mult;
     int i;
     
-    if (argc == args)
+    if (argc != 1 || argc != 2)
     {
         int n1 = atoi(argv[1]);
         int n2 = atoi(argv[2]);

@@ -9,12 +9,15 @@
 
 int main(int argc, char *argv[])
 {
-int m;
+int i;
 int mult;
 if (argc == 3)
 {
-m = atoi(argv[2]);
-mult = m;
+mult = 1;
+for (i= 1; i < argc; i++)
+{
+mult *=argv[i];
+}
 printf("%d\n", mult);
 }
 else

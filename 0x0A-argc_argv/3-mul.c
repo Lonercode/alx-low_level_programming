@@ -16,7 +16,7 @@ if (argc == 3)
 mult = 1;
 for (i = 1; i < argc; i++)
 {
-mult *= argv[i];
+mult *= atoi(argv[i]);
 }
 printf("%d\n", mult);
 }

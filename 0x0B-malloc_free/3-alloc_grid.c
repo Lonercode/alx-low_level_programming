@@ -2,41 +2,40 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * alloc_grid - alloc_grid
+ * alloc_grid - grid
  * @width: input
  * @height: input
  * Return: Result
  */
 int **alloc_grid(int width, int height)
 {
-	int **arr;
-	int i, j;
+	int **iarray;
+	int i, n;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
 
-	arr = malloc(sizeof(int) * height);
+	iarray = malloc(sizeof(int) * height);
 
-	if (arr == NULL)
+	if (iarray == NULL)
 	{
-		free(arr);
+		free(iarray);
 		return (NULL);
 	}
 
 	for (i = 0; i < height; i++)
 	{
-		arr[i] = malloc(sizeof(int) * width);
-		if (arr == NULL)
+		iarray[i] = malloc(sizeof(int) * width);
+		if (iarray == NULL)
 		{
-			free(arr);
+			free(iarray);
 			return (NULL);
 		}
 
-		for (j = 0; j < width; j++)
+		for (n = 0; n < width; n++)
 		{
-			arr[i][j] = 0;
+			iarray[i][n] = 0;
 		}
 	}
-	return (arr);
+	return (iarray);
 }
-

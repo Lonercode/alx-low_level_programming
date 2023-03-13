@@ -1,33 +1,37 @@
-#include <stdlib.h>
 #include "main.h"
+#include <stdlib.h>
 /**
  * _strdup - strdup
  * @str: input
- * Return: Result
+ * Return: 0
  */
 char *_strdup(char *str)
 {
-	char *array;
-	int i, len;
+	char *arr;
+	unsigned int len, i;
 
-	array = malloc(sizeof(str));
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 
-	i = len = 0;
-	while (str[i] != '\0')
+	len = 0;
+	while (str[len] != '\0')
 	{
 		len++;
-		i++;
 	}
 
-	if (array == NULL)
-		return (NULL);
-	i = 0;
-	while (str[i] != '\0')
+	arr = malloc(sizeof(char) * (len + 1));
+
+	if (arr == NULL)
 	{
-		array[i] = str[i];
-		i++;
+		return (NULL);
 	}
 
-	return (array);
+	for (i = 0; i < len; i++)
+	{
+		arr[i] = str[i];
+	}
+	arr[len] = '\0';
+	return (arr);
 }
-

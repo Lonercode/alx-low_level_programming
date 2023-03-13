@@ -5,7 +5,7 @@
  * @grid: input
  * @height: input
  */
-void f__grid(char **grid, unsigned int height)
+void f_grid(char **grid, unsigned int height)
 {
 	if (grid != NULL && height != 0)
 	{

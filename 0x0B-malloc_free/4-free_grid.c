@@ -1,11 +1,10 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 /**
- * free_grid - free_grid
+ * free_grid - Main Entry
  * @grid: input
  * @height: input
- * Return: Nothing
  */
 void free_grid(int **grid, int height)
 {

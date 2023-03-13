@@ -3,28 +3,21 @@
 #include "main.h"
 /**
  * create_array - create array
- *@size: input
- *@c: input
- *
- * Return: Something
+ * @size: input
+ * @c: input
+ * Return: Array
  */
 char *create_array(unsigned int size, char c)
 {
 	char *str;
-        unsigned int i;
+	unsigned int i;
+
 	str = malloc(sizeof(char) * size);
 
-	if (size != 0 || str != NULL)
-	{
-	for (i = 0; i < size; i++)
-	{
-		str[i] = c;
-	}
-	return (str);
-	}
-	else
-	{
-	return (NULL);
-	}
-}
+	if (size == 0 || str == NULL)
+		return (NULL);
 
+	for (i = 0; i < size; i++)
+		str[i] = c;
+	return (str);
+}

@@ -4,7 +4,7 @@
  * print_dog - Print struct
  * @d: struct dog
  *
- * Return: 0 (success)
+ * Return: Nothing.
  */
 void print_dog(struct dog *d)
 {

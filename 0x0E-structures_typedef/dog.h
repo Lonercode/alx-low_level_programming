@@ -1,7 +1,21 @@
 #ifndef _DOG
 #define _DOG
 
-typedef struct dog dog_t
+/**
+ * dog_t - Typedef for struct dog
+ */
+
+typedef struct dog dog_t;
+
+/**
+ * struct dog - Dog info
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: owner of the dog
+ *
+ * Description: struct called "dog", stores name, age and owner's name
+ *
+ */
 
 struct
 {

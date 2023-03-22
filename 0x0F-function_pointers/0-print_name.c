@@ -2,7 +2,7 @@
 
 /** print_name - Print a name
  * @name: input
- * @f: input
+ * @f: function pointer
  *
  * Return: Nothing
  */

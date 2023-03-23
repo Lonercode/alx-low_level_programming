@@ -6,23 +6,21 @@
  *
  * Return: varies
  */
-iint sum_them_all(const insigned int n, ...)
+int sum_them_all(const unsigned int n, ...)
 {
-if (n == 0)
-{
-return (0);
-}
-else
-{
-int sum = 0; 
-va_list ptr;
-va_start(ptr, n);
- 
-for (int i = 0; i < n; i++)
-{
-sum += va_arg(ptr, int);
-}
-va_end(ptr);
-return (sum);
-}
+	va_list valist;
+	unsigned int i;
+	int sum = 0;
+
+	if (n == 0)
+		return (0);
+
+	va_start(valist, n);
+
+	for (i = 0; i < n; i++)
+		sum += va_arg(valist, int);
+
+	va_end(valist);
+
+	return (sum);
 }

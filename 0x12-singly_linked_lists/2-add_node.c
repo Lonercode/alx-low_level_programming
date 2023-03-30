@@ -3,7 +3,7 @@
 /**
  * add_node - Adds new node at the beginning of linked list
  * @head: pointer
- * @str: input
+ * @str: string
  *
  * Return: the number of elements
  */
@@ -15,7 +15,7 @@ list_t *add_node(list_t **head, const char *str)
 	if (new_node != NULL)
 	{
 		new_node->str = strdup(str);
-		new_node->len = lens(str);
+		new_node->len = _strlen(str);
 		new_node->next = *head;
 	}
 	else
@@ -27,12 +27,12 @@ list_t *add_node(list_t **head, const char *str)
 }
 
 /**
- * lens - String length
+ * _strlen - String length
  * @str: string
  *
  * Return: string length
  */
-int lens(const char *str)
+int _strlen(const char *str)
 {
 	int i = 0;
 

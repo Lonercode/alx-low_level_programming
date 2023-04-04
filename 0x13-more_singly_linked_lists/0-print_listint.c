@@ -8,14 +8,14 @@
  */
 size_t print_listint(const listint_t *h)
 {
-const listint_t *cursor = h;
-size_t count = 0;
+const listint_t *ptr = h;
+size_t nodes = 0;
 
-while (cursor != NULL)
+while (ptr != NULL)
 {
-printf("%d\n", cursor->n);
-count += 1;
-cursor = cursor->next;
+printf("%d\n", ptr->n);
+nodes++;
+ptr = ptr->next;
 }
-return (count);
+return (nodes);
 }

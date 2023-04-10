@@ -8,36 +8,28 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t i;
-    ssize_t j;
-    ssize_t k;
-	char *b;
+ssize_t i, j, k;
+char *buff;
 
 if (filename == NULL)
 {
-	return (0);
+return (0);
 }
-else
+buff = malloc(sizeof(char) * letters);
+if (buff == NULL)
 {
-    b = malloc(sizeof(char) * letters);
+return (0);
 }
-if (b == NULL)
+i = open(filename, O_RDONLY);
+j = read(i, buff, letters);
+k = write(STDOUT_FILENO, buff, j);
+if (i == -1 || j == -1 || k == -1 || k != j)
 {
-	return (0);
-}
-else
-{
-	i = open(filename, O_RDONLY);
-	j = read(i, b, letters);
-	k = write(STDOUT_FILENO, b, j);
-}
-if (i == -1 || j == -1 || k == -1 || k != r)
-{
-	free(b);
-	return (0);
+free(buff);
+return (0);
 }
 
-free(b);
+free(buff);
 close(i);
 
 return (k);

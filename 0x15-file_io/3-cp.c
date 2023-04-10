@@ -24,7 +24,7 @@ char *create_buffer(char *file)
 		exit(99);
 	}
 
-	return (buff);
+	return (buffer);
 }
 
 /**

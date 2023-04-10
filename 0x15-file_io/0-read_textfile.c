@@ -8,30 +8,33 @@
  *
  * Return: 0 or number of bytes
  */
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t o, r, w;
-	char *buffer;
-
-	if (filename == NULL)
-		return (0);
-
-	buffer = malloc(sizeof(char) * letters);
-	if (buffer == NULL)
-		return (0);
-
-	o = open(filename, O_RDONLY);
-	r = read(o, buffer, letters);
-	w = write(STDOUT_FILENO, buffer, r);
-
-	if (o == -1 || r == -1 || w == -1 || w != r)
-	{
-		free(buffer);
-		return (0);
-	}
-
-	free(buffer);
-	close(o);
-
-	return (w);
+int i, j, fd;
+char *buf;
+if (!filename)
+	return (0);
+fd = open(filename, O_RDONLY);
+if (fd < 0)
+	return (0);
+buffer = malloc(sizeof(char) * letters);
+if (!buffer)
+	return (0);
+i = read(fd, buffer, letters);
+if (i < 0)
+{
+free(buffer);
+return (0);
+}
+buffer[i] = '\0';
+close(fd);
+j = write(STDOUT_FILENO, buffer, i);
+if (j < 0)
+{
+free(buffer);
+return (0);
+}
+free(buffer);
+return (j);
 }

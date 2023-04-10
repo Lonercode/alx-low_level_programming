@@ -1,6 +1,11 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+/*
+ * File: main.h
+ * Auth: Lonercode
+ * Desc: Header file for the project
+ */
 
 #include <sys/types.h>
 #include <sys/stat.h>

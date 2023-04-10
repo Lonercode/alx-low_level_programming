@@ -4,8 +4,6 @@
 /**
  * print_binary - binary of a number
  * @n: input
- *
- * Return: Nothing
  */
 
 void print_binary(unsigned long int n)

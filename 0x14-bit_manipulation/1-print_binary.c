@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 /**
- * print_binary - print binary representation of a number
- * @n: decimal number to print as binary
+ * print_binary - binary of a number
+ * @n: input
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int temp;
-	int shifts;
+	unsigned long int i;
+	int s;
 
 	if (n == 0)
 	{
@@ -16,12 +16,11 @@ void print_binary(unsigned long int n)
 		return;
 	}
 
-	for (temp = n, shifts = 0; (temp >>= 1) > 0; shifts++)
-		;
+	for (i = n, s = 0; (i >>= 1) > 0; s++);
 
-	for (; shifts >= 0; shifts--)
+	for (; s >= 0; s--)
 	{
-		if ((n >> shifts) & 1)
+		if ((n >> s) & 1)
 			printf("1");
 		else
 			printf("0");

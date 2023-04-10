@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * set_bit - value of bit to 1 set at index
+ * set_bit - sets bit value to 1
  * @n: input
  * @index: input
- * 
- * Return: -1 or 1
+ * Return: 1 or -1
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {

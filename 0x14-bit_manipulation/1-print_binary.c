@@ -22,8 +22,8 @@ for (i = n, s = 0; (i >>= 1) > 0; s++);
 for (; s >= 0; s--)
 {
 if ((n >> s) & 1)
-printf("1");
+_putchar('1');
 else
-printf("0");
+_putchar('0');
 }
 }

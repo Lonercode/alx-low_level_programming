@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 char *create_buffer(char *file);
-void end_file(int f);
+void end_file(int fd);
 
 /**
  * create_buffer - Buffer allocation
@@ -26,9 +26,9 @@ return (buff);
 
 /**
  * end_file - Close file
- * @f: File descriptor
+ * @fd: File descriptor
  */
-void end_file(int f)
+void end_file(int fd)
 {
 	int q;
 
@@ -36,7 +36,7 @@ void end_file(int f)
 
 	if (q == -1)
 	{
-	dprintf(STDERR_FILENO, "Error: Can't close f %d\n", f);
+	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 	exit(100);
 	}
 }
@@ -88,8 +88,8 @@ int main(int argc, char *argv[])
 	} while (j > 0);
 
 	free(buff);
-	close_file(start);
-	close_file(end);
+	end_file(start);
+	end_file(end);
 
 	return (0);
 }

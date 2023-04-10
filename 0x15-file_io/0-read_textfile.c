@@ -28,9 +28,7 @@ if (i == -1 || j == -1 || k == -1 || k != j)
 free(buff);
 return (0);
 }
-
 free(buff);
 close(i);
-
 return (k);
 }

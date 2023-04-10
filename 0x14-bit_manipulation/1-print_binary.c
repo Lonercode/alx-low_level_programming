@@ -3,7 +3,7 @@
 
 /**
  * print_binary - binary of a number
- * @n: input
+ * @n: number to be made binary
  */
 void print_binary(unsigned long int n)
 {

@@ -1,11 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * clear_bit - valeu of bit to 0 at index
+ * clear_bit - set bit val
  * @n: input
  * @index: input
- * 
- * Return: -1 or 1
+ * Return: 1 or -1
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {

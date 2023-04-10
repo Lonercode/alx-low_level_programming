@@ -2,28 +2,30 @@
 #include <stdio.h>
 
 /**
- *print_binary - binary version of a number
- *@n: input
+ * print_binary - binary of a number
+ * @n: input
  *
- *Return: Nothing
+ * Return: Nothing
  */
 void print_binary(unsigned long int n)
 {
-unsigned long int t;
-int s;
-if (n == 0)
-{
-printf("0");
-return;
+	unsigned long int i;
+	int s;
+
+	if (n == 0)
+	{
+		printf("0");
+		return;
+	}
+
+	for (i = n, s = 0; (t >>= 1) > 0; s++);
+
+	for (; s >= 0; s--)
+	{
+		if ((n >> s) & 1)
+			printf("1");
+		else
+			printf("0");
+	}
 }
 
-for (t = n, s = 0; (t >>= 1) > 0; s++);
-
-for (; s >= 0; s--)
-{
-if ((n >> s) & 1)
-	printf("1");
-else
-	printf("0");
-}
-}

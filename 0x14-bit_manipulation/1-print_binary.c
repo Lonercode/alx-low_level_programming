@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- * print_binary - binary of a number
- * @n: number to be made binary
+ * print_binary - print binary representation of a number
+ * @n: decimal number to print as binary
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int i;
+	unsigned long int t;
 	int s;
 
 	if (n == 0)
@@ -16,7 +16,9 @@ void print_binary(unsigned long int n)
 		return;
 	}
 
-	for (i = n, s = 0; (i >>= 1) > 0; s++);
+	for (t = n, s = 0; (t >>= 1) > 0; s++)
+		;
+
 	for (; s >= 0; s--)
 	{
 		if ((n >> s) & 1)
